@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <input type="text" id="test1" />
+  <input type="text" id="test2" />
+  <input type="text" id="test3" />
+
+<script>
+$(document).ready(function(){
+
+  $("#test1").change(function(){
+    $("#test3").val($("#test1").val() + $("#test2").val());
+  })
+  $("#test2").change(function(){
+    $("#test3").val($("#test1").val() + $("#test2").val());
+  })
+
+})
+</script>
+
+</body>
+</html>
